@@ -1,0 +1,34 @@
+<div class="portfolio-card hoverable">
+  <div class="card-company-name">{{data.companyName}}</div>
+  <div class="card-quarter">{{data.quarter}} {{data.year}}</div>
+  <div class="card-image-container">
+    <img src={{data.imageSource}} class="card-image"/>
+  </div>
+  <div class="card-press-highlights">
+    <div class="card-press-highlights-title">Press Highlights</div>
+    <ul class="card-press-highlights-content">
+      <li class="card-press-highlight" *ngFor="let highlight of data.pressHighlights">
+        <a href={{highlight.link}}>{{highlight.text}}</a>
+      </li>
+<!--      <li class="card-press-highlight">-->
+<!--        Secures $125m Joint Venture Commitment with Digital Alpha-->
+<!--      </li>-->
+
+<!--      <li class="card-press-highlight">-->
+<!--        Cisco & Cloudian Collaborate to Create Scale-Out Enterprise Object Storage Solutions-->
+<!--      </li>-->
+<!--      <li class="card-press-highlight">-->
+<!--        Cloudian Taking Customers From NetApp In $24B Market (Forbes)-->
+<!--      </li>-->
+<!--      <li class="card-press-highlight">-->
+<!--        Most Widely Deployed Independent Object Storage Provider-->
+<!--      </li>-->
+<!--      <li class="card-press-highlight">-->
+<!--        Cloudian & Seagate Collaborate for Joint Solution-->
+
+<!--      </li>-->
+
+    </ul>
+  </div>
+
+</div>

@@ -1,0 +1,86 @@
+$shadow: 0pt 3pt 8pt rgba(0, 0, 0, 0.2);
+$shadow-hover: 0pt 6pt 16pt rgba(0, 0, 0, 0.2);
+
+$transition-time: 0.25s;
+
+$hover-color-dark: rgba(0, 0, 0, 0.1);
+$transition-time: .25s;
+.hoverable {
+    transition: $transition-time;
+}
+
+.hoverable:hover {
+
+    animation-name: hover;
+    animation-duration: $transition-time;
+
+    transform: translateY(-20pt);
+    padding: 25pt;
+    box-shadow: $shadow-hover;
+
+}
+
+// References used to learn how to do these animations:
+// http://www.inwebson.com/css3/nifty-hover-effects-with-css3-animations/
+// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+@keyframes hover {
+
+    from {
+        transform: translateY(0pt);
+        padding: 20pt;
+        box-shadow: $shadow;
+    }
+
+    to {
+        transform: translateY(-20pt);
+        padding: 25pt;
+        box-shadow: $shadow-hover;
+    }
+
+}
+
+
+
+.portfolio-card {
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px 0px;
+  background-color: white;
+  border-radius: .25rem;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  /*margin: 10px;*/
+
+  height: 100%;
+  max-width: 400px;
+
+}
+.card-company-name {
+  text-transform:uppercase;
+  font-weight:700;
+}
+.card-quarter {
+
+}
+.card-image-container {
+  text-align: center;
+
+}
+.card-image {
+
+
+}
+.card-press-highlights {
+
+}
+.card-press-highlights-title {
+
+}
+.card-press-highlights-content {
+
+}
+.card-press-highlights-highlight {
+
+}
